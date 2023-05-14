@@ -75,6 +75,6 @@ public class JsonParser {
 		JSONObject json = new JSONObject(resultString);
 
 		// Unescape json for `//` in http link
-		return StringEscapeUtils.unescapeJson(json.toString());
+		return StringEscapeUtils.unescapeJson(json.toString(4));
 	}
 }
